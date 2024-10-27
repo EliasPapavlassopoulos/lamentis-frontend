@@ -21,13 +21,13 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 8 # Spezifische pnpm-Version
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: 'pnpm' # Cache für pnpm
 
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v4
@@ -35,6 +35,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
+      # Optional: NX Cache Reset (Falls Cache behalten, entferne diesen Schritt)
       - name: Reset NX Cache
         run: pnpm nx reset
 
@@ -42,7 +43,7 @@ jobs:
         run: pnpm nx format:check apps/ libs/ src/
 
       - name: Lint Code
-        run: pnpm nx lint playground
+        run: pnpm nx run-many -t lint
 
       - name: Run Unit Tests
-        run: pnpm nx test playground
+        run: pnpm nx run-many -t test
