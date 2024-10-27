@@ -1,0 +1,160 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.8.4",
+  "deps": {
+    "@angular/animations": "^18.2.0",
+    "@angular/common": "^18.2.0",
+    "@angular/compiler": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "@angular/forms": "^18.2.0",
+    "@angular/platform-browser": "^18.2.0",
+    "@angular/platform-browser-dynamic": "^18.2.0",
+    "@angular/platform-server": "^18.2.0",
+    "@angular/router": "^18.2.0",
+    "@angular/ssr": "^18.2.10",
+    "express": "^4.18.2",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.10",
+    "@angular-devkit/build-angular": "^18.2.10",
+    "@angular/cli": "^18.2.10",
+    "@angular/compiler-cli": "^18.2.0",
+    "@eslint/js": "^9.13.0",
+    "@nrwl/workspace": "^19.8.4",
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "jasmine-core": "~5.2.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-attributes": "^1.0.0",
+    "prettier-plugin-packagejson": "^2.5.3",
+    "typescript": "~5.5.2",
+    "typescript-eslint": "^8.11.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "yarn.lock",
+        "hash": "14705787615007420009"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "9105803423200674278"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "8918301549046766373"
+      },
+      {
+        "file": "package.json",
+        "hash": "1677672093395552756"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "6318051909506589375"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "15824736068539991196"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "7541409410423088479"
+      },
+      {
+        "file": "src/main.server.ts",
+        "hash": "11653607448136507287"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "18168400278403753650"
+      },
+      {
+        "file": "public/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "4258672375920435769"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17038929134016848735"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "446804800312013118"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "12397496131277534773"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "4927504514031276065"
+      },
+      {
+        "file": ".prettierrc.js",
+        "hash": "10551517433805002906"
+      },
+      {
+        "file": "src/app/app.config.server.ts",
+        "hash": "14750464052796800194"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "README.md",
+        "hash": "4014945733649683901"
+      },
+      {
+        "file": "server.ts",
+        "hash": "17247624917652365036"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "5331566439708925252"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "4165385352547808172"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "5625725754865452477"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "5195668842064076916"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "5336636969995539451"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1134859888299763849"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10178400384805918641"
+      },
+      {
+        "file": "angular.json",
+        "hash": "3945726402980729125"
+      }
+    ],
+    "projectFileMap": {}
+  }
+}
