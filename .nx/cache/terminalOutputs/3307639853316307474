@@ -1,0 +1,16 @@
+[33mWorkspace extension with invalid name (npmScope) found.[39m
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[32m27 10 2024 19:51:30.175:INFO [karma-server]: [39mKarma v6.4.4 server started at http://localhost:9876/
+[32m27 10 2024 19:51:30.176:INFO [launcher]: [39mLaunching browsers Chrome with concurrency unlimited
+[32m27 10 2024 19:51:30.179:INFO [launcher]: [39mStarting browser Chrome
+[32m27 10 2024 19:51:31.639:INFO [Chrome 130.0.0.0 (Mac OS 10.15.7)]: [39mConnected on socket fV8HrkTSzbfO4Wm3AAAB with id 9851025
+Chrome 130.0.0.0 (Mac OS 10.15.7): Executed 0 of 3[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome 130.0.0.0 (Mac OS 10.15.7): Executed 1 of 3[32m SUCCESS[39m (0 secs / 0.05 secs)
+[1A[2KChrome 130.0.0.0 (Mac OS 10.15.7): Executed 2 of 3[32m SUCCESS[39m (0 secs / 0.052 secs)
+[1A[2KChrome 130.0.0.0 (Mac OS 10.15.7): Executed 3 of 3[32m SUCCESS[39m (0 secs / 0.053 secs)
+[1A[2KChrome 130.0.0.0 (Mac OS 10.15.7): Executed 3 of 3[32m SUCCESS[39m (0.057 secs / 0.053 secs)
+[32mTOTAL: 3 SUCCESS[39m
+[1A[2K[31mChrome 130.0.0.0 (Mac OS 10.15.7) ERROR[39m
+  Some of your tests did a full page reload!
+Chrome 130.0.0.0 (Mac OS 10.15.7): Executed 3 of 3[31m ERROR[39m (0.057 secs / 0.053 secs)
+[1A[2KChrome 130.0.0.0 (Mac OS 10.15.7): Executed 3 of 3[31m ERROR[39m (0.07 secs / 0.053 secs)

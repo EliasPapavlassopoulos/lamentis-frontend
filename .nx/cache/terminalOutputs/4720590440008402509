@@ -1,0 +1,4 @@
+[33mWorkspace extension with invalid name (npmScope) found.[39m
+[36m⠋[39m Generating browser application bundles (phase: setup)...[91m27 10 2024 19:40:20.297:ERROR [plugin]: [39mCannot load "webpack", it is not registered!
+  Perhaps you are missing some plugin?
+[91m27 10 2024 19:40:20.298:ERROR [karma-server]: [39mServer start failed on port 9876: Error: No provider for "framework:@angular-devkit/build-angular"! (Resolving: framework:@angular-devkit/build-angular)

@@ -53,16 +53,30 @@
           ]
         },
         {
+          "file": "karma.conf.js",
+          "hash": "11745756042742832702",
+          "deps": [
+            [
+              "npm:karma-jasmine",
+              "dynamic"
+            ],
+            [
+              "npm:karma-chrome-launcher",
+              "dynamic"
+            ],
+            [
+              "npm:@angular-devkit/build-angular",
+              "dynamic"
+            ]
+          ]
+        },
+        {
           "file": "nx.json",
           "hash": "716263308430307170"
         },
         {
-          "file": "package-lock.json",
-          "hash": "3445165083406062898"
-        },
-        {
           "file": "package.json",
-          "hash": "2574099568891259538",
+          "hash": "16323767760556615512",
           "deps": [
             "npm:@angular-devkit/build-angular",
             "npm:@angular-eslint/eslint-plugin-template",
@@ -86,12 +100,15 @@
             "npm:karma-coverage",
             "npm:karma-jasmine",
             "npm:karma-jasmine-html-reporter",
+            "npm:karma-webpack",
             "npm:nx",
             "npm:prettier",
             "npm:prettier-plugin-organize-attributes",
             "npm:prettier-plugin-packagejson",
             "npm:typescript",
             "npm:typescript-eslint",
+            "npm:webpack",
+            "npm:webpack-cli",
             "npm:@angular/animations",
             "npm:@angular/common",
             "npm:@angular/compiler",
@@ -195,6 +212,15 @@
           "hash": "5195668842064076916"
         },
         {
+          "file": "src/test.ts",
+          "hash": "1419104997802281733",
+          "deps": [
+            "npm:zone.js",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
           "file": "tsconfig.app.json",
           "hash": "7541409410423088479"
         },
@@ -204,11 +230,11 @@
         },
         {
           "file": "tsconfig.spec.json",
-          "hash": "8918301549046766373"
+          "hash": "15342789524466079190"
         },
         {
           "file": "yarn.lock",
-          "hash": "3194646333450670973"
+          "hash": "5586085177777584493"
         }
       ]
     }
