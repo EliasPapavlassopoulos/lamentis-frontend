@@ -39,3 +39,25 @@
 [NX Daemon Server] - 2024-10-27T17:44:21.449Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2024-10-27T17:44:21.450Z - Time taken for 'total execution time for createProjectGraph()' 1.3624169999993683ms
 [NX Daemon Server] - 2024-10-27T17:44:21.489Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T17:46:39.444Z - [WATCHER]: .github/workflows/ci-main.yml was modified
+[NX Daemon Server] - 2024-10-27T17:46:39.444Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T17:46:39.645Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T17:46:39.646Z - [REQUEST]: .github/workflows/ci-main.yml
+[NX Daemon Server] - 2024-10-27T17:46:39.646Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T17:46:39.647Z - Time taken for 'hash changed files from watcher' 0.09866700001293793ms
+[NX Daemon Server] - 2024-10-27T17:46:39.649Z - Time taken for 'build-project-configs' 1.696416999999201ms
+[NX Daemon Server] - 2024-10-27T17:46:39.651Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T17:46:39.651Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-10-27T17:46:39.651Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-10-27T17:46:39.651Z - Time taken for 'total execution time for createProjectGraph()' 1.7234999999927823ms
+[NX Daemon Server] - 2024-10-27T17:46:40.132Z - [WATCHER]: .github/workflows/ci-main.yml was modified
+[NX Daemon Server] - 2024-10-27T17:46:40.133Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T17:46:40.534Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T17:46:40.534Z - [REQUEST]: .github/workflows/ci-main.yml
+[NX Daemon Server] - 2024-10-27T17:46:40.534Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T17:46:40.536Z - Time taken for 'hash changed files from watcher' 0.22708300000522286ms
+[NX Daemon Server] - 2024-10-27T17:46:40.538Z - Time taken for 'build-project-configs' 2.329249999980675ms
+[NX Daemon Server] - 2024-10-27T17:46:40.540Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T17:46:40.540Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-10-27T17:46:40.540Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-10-27T17:46:40.540Z - Time taken for 'total execution time for createProjectGraph()' 2.151708999997936ms

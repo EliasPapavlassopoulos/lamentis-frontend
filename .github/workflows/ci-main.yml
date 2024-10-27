@@ -22,20 +22,17 @@ jobs:
           node-version: '22'
           cache: 'yarn'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
-
       - name: Install Dependencies
-        run: pnpm install
+        run: yarn install
 
       - name: Format Code
-        run: pnpm nx format:write
+        run: yarn nx format:write
 
       - name: Lint Code
-        run: pnpm nx run-many -t lint
+        run: yarn nx run-many -t lint
 
       - name: Run Tests
-        run: pnpm nx run-many -t test
+        run: yarn nx run-many -t test
 
       - name: Build Project
-        run: pnpm nx run-many -t build
+        run: yarn nx run-many -t build
