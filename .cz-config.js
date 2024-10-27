@@ -7,14 +7,14 @@ module.exports = {
     { value: 'style', name: '💄 style:     Formatierung, keine Code-Änderungen' },
     { value: 'refactor', name: '♻️  refactor: Code-Umstrukturierung ohne Bugfix oder neues Feature' },
     { value: 'test', name: '✅ test:      Tests hinzufügen oder anpassen' },
-    { value: 'chore', name: '📦 chore:     Andere Änderungen, die nichts am Code ändern' }
+    { value: 'chore', name: '📦 chore:     Andere Änderungen, die nichts am Code ändern' },
   ],
 
   // Kurze und klare Nachrichten
   messages: {
-    type: "Wähle den Commit-Typ:",
+    type: 'Wähle den Commit-Typ:',
     subject: 'Kurze Beschreibung (max 50 Zeichen):\n',
-    confirmCommit: 'Möchtest du diesen Commit erstellen?'
+    confirmCommit: 'Möchtest du diesen Commit erstellen?',
   },
 
   // Maximal 50 Zeichen für den Titel
@@ -22,5 +22,5 @@ module.exports = {
 
   // Nur die nötigsten Optionen, um es einfach zu halten
   allowCustomScopes: false,
-  allowBreakingChanges: false
+  allowBreakingChanges: false,
 };

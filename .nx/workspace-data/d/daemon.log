@@ -1,33 +1,41 @@
-[NX Daemon Server] - 2024-10-27T17:28:11.198Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
-[NX Daemon Server] - 2024-10-27T17:28:11.201Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
-[NX Daemon Server] - 2024-10-27T17:28:11.204Z - Established a connection. Number of open connections: 1
-[NX Daemon Server] - 2024-10-27T17:28:11.204Z - Established a connection. Number of open connections: 2
-[NX Daemon Server] - 2024-10-27T17:28:11.205Z - Closed a connection. Number of open connections: 1
-[NX Daemon Server] - 2024-10-27T17:28:11.206Z - [REQUEST]: Responding to the client. Shutdown initiated
-[NX Daemon Server] - 2024-10-27T17:28:11.206Z - Done responding to the client Shutdown initiated
-[NX Daemon Server] - 2024-10-27T17:28:11.206Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
-[NX Daemon Server] - 2024-10-27T17:28:11.207Z - Closed a connection. Number of open connections: 0
-[NX Daemon Server] - 2024-10-27T17:28:11.208Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
-[NX Daemon Server] - 2024-10-27T17:28:11.208Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
-[NX Daemon Server] - 2024-10-27T17:30:34.255Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
-[NX Daemon Server] - 2024-10-27T17:30:34.258Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
-[NX Daemon Server] - 2024-10-27T17:30:34.261Z - Established a connection. Number of open connections: 1
-[NX Daemon Server] - 2024-10-27T17:30:34.261Z - Established a connection. Number of open connections: 2
-[NX Daemon Server] - 2024-10-27T17:30:34.263Z - Closed a connection. Number of open connections: 1
-[NX Daemon Server] - 2024-10-27T17:30:34.265Z - [REQUEST]: Responding to the client. Shutdown initiated
-[NX Daemon Server] - 2024-10-27T17:30:34.265Z - Done responding to the client Shutdown initiated
-[NX Daemon Server] - 2024-10-27T17:30:34.265Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
-[NX Daemon Server] - 2024-10-27T17:30:34.266Z - Closed a connection. Number of open connections: 0
-[NX Daemon Server] - 2024-10-27T17:30:34.266Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
-[NX Daemon Server] - 2024-10-27T17:30:34.266Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
-[NX Daemon Server] - 2024-10-27T17:33:50.271Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
-[NX Daemon Server] - 2024-10-27T17:33:50.275Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
-[NX Daemon Server] - 2024-10-27T17:33:50.283Z - Established a connection. Number of open connections: 1
-[NX Daemon Server] - 2024-10-27T17:33:50.283Z - Established a connection. Number of open connections: 2
-[NX Daemon Server] - 2024-10-27T17:33:50.284Z - Closed a connection. Number of open connections: 1
-[NX Daemon Server] - 2024-10-27T17:33:50.285Z - [REQUEST]: Responding to the client. Shutdown initiated
-[NX Daemon Server] - 2024-10-27T17:33:50.285Z - Done responding to the client Shutdown initiated
-[NX Daemon Server] - 2024-10-27T17:33:50.285Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
-[NX Daemon Server] - 2024-10-27T17:33:50.288Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
-[NX Daemon Server] - 2024-10-27T17:33:50.289Z - Closed a connection. Number of open connections: 0
-[NX Daemon Server] - 2024-10-27T17:33:50.289Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
+[NX Daemon Server] - 2024-10-27T17:44:14.454Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
+[NX Daemon Server] - 2024-10-27T17:44:14.456Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
+[NX Daemon Server] - 2024-10-27T17:44:14.464Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:44:14.465Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-27T17:44:14.465Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:44:14.466Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-10-27T17:44:14.515Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T17:44:14.613Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T17:44:14.613Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T17:44:14.613Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T17:44:14.617Z - Time taken for 'loadNxPlugins' 146.16116600000004ms
+[NX Daemon Server] - 2024-10-27T17:44:14.629Z - Time taken for 'build-project-configs' 3.708500000000015ms
+[NX Daemon Server] - 2024-10-27T17:44:14.630Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T17:44:14.631Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-10-27T17:44:14.631Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-10-27T17:44:14.631Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 165. Response time: 0.
+[NX Daemon Server] - 2024-10-27T17:44:14.631Z - Time taken for 'total for creating and serializing project graph' 164.719625ms
+[NX Daemon Server] - 2024-10-27T17:44:14.675Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-10-27T17:44:14.675Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-10-27T17:44:14.675Z - Handled HASH_TASKS. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-10-27T17:44:14.697Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T17:44:21.051Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:44:21.052Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T17:44:21.052Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:44:21.053Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-10-27T17:44:21.053Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-10-27T17:44:21.053Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-10-27T17:44:21.054Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-10-27T17:44:21.054Z - Time taken for 'total for creating and serializing project graph' 0.17641699999967386ms
+[NX Daemon Server] - 2024-10-27T17:44:21.342Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T17:44:21.342Z - [WATCHER]: .cz-config.js was modified
+[NX Daemon Server] - 2024-10-27T17:44:21.444Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T17:44:21.444Z - [REQUEST]: .cz-config.js
+[NX Daemon Server] - 2024-10-27T17:44:21.444Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T17:44:21.445Z - Time taken for 'hash changed files from watcher' 0.08329200000025594ms
+[NX Daemon Server] - 2024-10-27T17:44:21.447Z - Time taken for 'build-project-configs' 1.8005419999999503ms
+[NX Daemon Server] - 2024-10-27T17:44:21.449Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T17:44:21.449Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-10-27T17:44:21.449Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-10-27T17:44:21.450Z - Time taken for 'total execution time for createProjectGraph()' 1.3624169999993683ms
+[NX Daemon Server] - 2024-10-27T17:44:21.489Z - Closed a connection. Number of open connections: 0
