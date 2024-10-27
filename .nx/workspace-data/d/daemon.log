@@ -94,3 +94,7 @@
 [NX Daemon Server] - 2024-10-27T17:49:09.277Z - [SYNC]: project graph hash is the same, not collecting task sync generators
 [NX Daemon Server] - 2024-10-27T17:49:09.277Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2024-10-27T17:49:09.277Z - Time taken for 'total execution time for createProjectGraph()' 0.8743340000510216ms
+[NX Daemon Server] - 2024-10-27T17:53:57.597Z - [WATCHER]: nx.json was modified
+[NX Daemon Server] - 2024-10-27T17:53:57.598Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T17:53:59.952Z - [WATCHER]: nx.json was modified
+[NX Daemon Server] - 2024-10-27T17:53:59.952Z - [WATCHER]: Processing file changes in outputs
