@@ -11,9 +11,6 @@
 npm-debug.log
 yarn-error.log
 
-# Nx cache and workspace data
-.nx/
-
 # IDEs and editors
 .idea/
 .project
@@ -22,6 +19,9 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+
+# Nx cache and workspace data
+.nx/
 
 # Visual Studio Code
 .vscode/*
