@@ -4,15 +4,18 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
-    "projectFileMap": {},
     "nonProjectFiles": [
       {
         "file": ".editorconfig",
         "hash": "4165385352547808172"
       },
       {
+        "file": ".github/workflows/ci-basic.yml",
+        "hash": "4851261138469041781"
+      },
+      {
         "file": ".github/workflows/ci-main.yml",
-        "hash": "8948684153765558019"
+        "hash": "6064846348276569010"
       },
       {
         "file": ".gitignore",
@@ -52,11 +55,11 @@
       },
       {
         "file": "package.json",
-        "hash": "4384814230547242243"
+        "hash": "9000845610805995573"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "6862061940115092074"
+        "hash": "1423479471750253596"
       },
       {
         "file": "public/favicon.ico",
@@ -126,6 +129,7 @@
         "file": "yarn.lock",
         "hash": "14705787615007420009"
       }
-    ]
+    ],
+    "projectFileMap": {}
   }
 }

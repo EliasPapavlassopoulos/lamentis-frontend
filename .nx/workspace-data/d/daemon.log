@@ -286,3 +286,35 @@ Error: NX_VERSION_CHANGED
 [NX Daemon Server] - 2024-10-27T16:17:37.131Z - [REQUEST]: 
 [NX Daemon Server] - 2024-10-27T16:17:37.135Z - Time taken for 'loadNxPlugins' 129.01850000000002ms
 [NX Daemon Server] - 2024-10-27T16:18:30.275Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T16:19:00.310Z - Time taken for 'build-project-configs' 83159.637833ms
+[NX Daemon Server] - 2024-10-27T16:19:00.333Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T16:19:00.333Z - [REQUEST]: Responding to the client. project-graph
+Error: This socket has been ended by the other party
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at Socket.writeAfterFIN [as write] (node:net:561:14)
+    at /Users/elias/Desktop/development/lamentis-frontend/node_modules/.pnpm/nx@20.0.6/node_modules/nx/src/daemon/server/shutdown-utils.js:71:16
+    at new Promise (<anonymous>)
+    at respondToClient (/Users/elias/Desktop/development/lamentis-frontend/node_modules/.pnpm/nx@20.0.6/node_modules/nx/src/daemon/server/shutdown-utils.js:67:12)
+    at handleResult (/Users/elias/Desktop/development/lamentis-frontend/node_modules/.pnpm/nx@20.0.6/node_modules/nx/src/daemon/server/server.js:178:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handleMessage (/Users/elias/Desktop/development/lamentis-frontend/node_modules/.pnpm/nx@20.0.6/node_modules/nx/src/daemon/server/server.js:107:9)
+    at async /Users/elias/Desktop/development/lamentis-frontend/node_modules/.pnpm/nx@20.0.6/node_modules/nx/src/daemon/server/server.js:72:9 {
+  code: 'EPIPE'
+}
+[NX Daemon Server] - 2024-10-27T16:19:00.335Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-10-27T16:19:00.335Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 83332. Response time: 2.
+[NX Daemon Server] - 2024-10-27T16:19:00.335Z - Time taken for 'total for creating and serializing project graph' 83331.894167ms
+[NX Daemon Server] - 2024-10-27T16:19:45.689Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T16:19:45.689Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T16:19:45.690Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T16:19:45.691Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-10-27T16:19:45.691Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-10-27T16:19:45.693Z - Time taken for 'total for creating and serializing project graph' 0.17775000000256114ms
+[NX Daemon Server] - 2024-10-27T16:19:45.717Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-10-27T16:19:45.717Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 26.
+[NX Daemon Server] - 2024-10-27T16:19:47.006Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T16:19:47.006Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T16:19:47.006Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
+[NX Daemon Server] - 2024-10-27T16:19:47.006Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
+[NX Daemon Server] - 2024-10-27T16:19:47.007Z - Server stopped because: "LOCK_FILES_CHANGED"
