@@ -6,7 +6,7 @@ module.exports = function (config) {
         require('karma-chrome-launcher'),
         require('@angular-devkit/build-angular/plugins/karma')
       ],
-      browsers: ['Chrome'],
+      browsers: ['ChromeHeadless'],
       singleRun: true
     });
   };

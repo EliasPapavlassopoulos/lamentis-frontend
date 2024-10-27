@@ -54,7 +54,7 @@
         },
         {
           "file": "karma.conf.js",
-          "hash": "11745756042742832702",
+          "hash": "12090150058137085852",
           "deps": [
             [
               "npm:karma-jasmine",
