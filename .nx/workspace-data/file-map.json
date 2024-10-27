@@ -6,124 +6,124 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "src/app/app.config.ts",
-        "hash": "6318051909506589375"
-      },
-      {
-        "file": "src/app/app.component.html",
-        "hash": "5625725754865452477"
-      },
-      {
-        "file": "README.md",
-        "hash": "4014945733649683901"
+        "file": "src/app/app.component.spec.ts",
+        "hash": "9105803423200674278"
       },
       {
         "file": "src/app/app.config.server.ts",
         "hash": "14750464052796800194"
       },
       {
-        "file": ".github/workflows/ci-main.yml",
-        "hash": "4835453738430750949"
-      },
-      {
-        "file": "tsconfig.spec.json",
-        "hash": "8918301549046766373"
-      },
-      {
-        "file": "angular.json",
-        "hash": "3945726402980729125"
-      },
-      {
-        "file": "package.json",
-        "hash": "17062073900010446512"
-      },
-      {
-        "file": "src/main.server.ts",
-        "hash": "11653607448136507287"
+        "file": ".vscode/extensions.json",
+        "hash": "5331566439708925252"
       },
       {
         "file": "server.ts",
         "hash": "17247624917652365036"
       },
       {
-        "file": "public/favicon.ico",
-        "hash": "3988961587069885523"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "18168400278403753650"
-      },
-      {
-        "file": "src/app/app.component.scss",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "1134859888299763849"
-      },
-      {
-        "file": "src/app/app.component.spec.ts",
-        "hash": "9105803423200674278"
-      },
-      {
-        "file": "src/app/app.component.ts",
-        "hash": "15824736068539991196"
-      },
-      {
-        "file": ".prettierrc.js",
-        "hash": "10551517433805002906"
-      },
-      {
-        "file": ".vscode/tasks.json",
-        "hash": "5336636969995539451"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "4165385352547808172"
-      },
-      {
         "file": "src/main.ts",
         "hash": "4927504514031276065"
       },
       {
-        "file": "nx.json",
-        "hash": "10178400384805918641"
+        "file": ".github/workflows/ci-main.yml",
+        "hash": "13403335056386561443"
       },
       {
-        "file": "eslint.config.mjs",
-        "hash": "4258672375920435769"
-      },
-      {
-        "file": "src/app/app.routes.ts",
-        "hash": "12397496131277534773"
-      },
-      {
-        "file": ".cz-config.js",
-        "hash": "12340679440132345298"
-      },
-      {
-        "file": ".vscode/launch.json",
-        "hash": "17038929134016848735"
-      },
-      {
-        "file": "src/index.html",
-        "hash": "446804800312013118"
-      },
-      {
-        "file": "src/styles.scss",
-        "hash": "5195668842064076916"
+        "file": "README.md",
+        "hash": "4014945733649683901"
       },
       {
         "file": "yarn.lock",
         "hash": "8614123602540235009"
       },
       {
-        "file": ".vscode/extensions.json",
-        "hash": "5331566439708925252"
-      },
-      {
         "file": "tsconfig.app.json",
         "hash": "7541409410423088479"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "15824736068539991196"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "8918301549046766373"
+      },
+      {
+        "file": ".prettierrc.js",
+        "hash": "10551517433805002906"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "18168400278403753650"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "5625725754865452477"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "5195668842064076916"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17038929134016848735"
+      },
+      {
+        "file": "angular.json",
+        "hash": "3945726402980729125"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "446804800312013118"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1134859888299763849"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "4165385352547808172"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10178400384805918641"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "5336636969995539451"
+      },
+      {
+        "file": ".cz-config.js",
+        "hash": "12340679440132345298"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "12397496131277534773"
+      },
+      {
+        "file": "package.json",
+        "hash": "17062073900010446512"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "6318051909506589375"
+      },
+      {
+        "file": "public/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "src/main.server.ts",
+        "hash": "11653607448136507287"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "4258672375920435769"
       }
     ],
     "projectFileMap": {}
