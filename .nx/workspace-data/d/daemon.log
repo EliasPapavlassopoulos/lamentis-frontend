@@ -1,0 +1,33 @@
+[NX Daemon Server] - 2024-10-27T17:28:11.198Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
+[NX Daemon Server] - 2024-10-27T17:28:11.201Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
+[NX Daemon Server] - 2024-10-27T17:28:11.204Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:28:11.204Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-27T17:28:11.205Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:28:11.206Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-10-27T17:28:11.206Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-10-27T17:28:11.206Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-10-27T17:28:11.207Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T17:28:11.208Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
+[NX Daemon Server] - 2024-10-27T17:28:11.208Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
+[NX Daemon Server] - 2024-10-27T17:30:34.255Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
+[NX Daemon Server] - 2024-10-27T17:30:34.258Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
+[NX Daemon Server] - 2024-10-27T17:30:34.261Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:30:34.261Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-27T17:30:34.263Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:30:34.265Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-10-27T17:30:34.265Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-10-27T17:30:34.265Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-10-27T17:30:34.266Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T17:30:34.266Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
+[NX Daemon Server] - 2024-10-27T17:30:34.266Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
+[NX Daemon Server] - 2024-10-27T17:33:50.271Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
+[NX Daemon Server] - 2024-10-27T17:33:50.275Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
+[NX Daemon Server] - 2024-10-27T17:33:50.283Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:33:50.283Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-27T17:33:50.284Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T17:33:50.285Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-10-27T17:33:50.285Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-10-27T17:33:50.285Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-10-27T17:33:50.288Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
+[NX Daemon Server] - 2024-10-27T17:33:50.289Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T17:33:50.289Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
