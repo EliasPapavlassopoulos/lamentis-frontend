@@ -274,3 +274,15 @@ Error: NX_VERSION_CHANGED
 [NX Daemon Server] - 2024-10-27T15:43:13.967Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
 [NX Daemon Server] - 2024-10-27T15:43:13.967Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
 [NX Daemon Server] - 2024-10-27T15:43:13.968Z - Server stopped because: "Request to shutdown"
+[NX Daemon Server] - 2024-10-27T16:17:36.989Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
+[NX Daemon Server] - 2024-10-27T16:17:36.992Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
+[NX Daemon Server] - 2024-10-27T16:17:36.999Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T16:17:37.000Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-27T16:17:37.001Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T16:17:37.001Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-10-27T16:17:37.054Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T16:17:37.131Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T16:17:37.131Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T16:17:37.131Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T16:17:37.135Z - Time taken for 'loadNxPlugins' 129.01850000000002ms
+[NX Daemon Server] - 2024-10-27T16:18:30.275Z - Closed a connection. Number of open connections: 0
