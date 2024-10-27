@@ -190,3 +190,87 @@
 [NX Daemon Server] - 2024-10-27T14:54:45.039Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
 [NX Daemon Server] - 2024-10-27T14:54:45.039Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
 [NX Daemon Server] - 2024-10-27T14:54:45.040Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX Daemon Server] - 2024-10-27T15:41:33.793Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
+[NX Daemon Server] - 2024-10-27T15:41:33.796Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
+[NX Daemon Server] - 2024-10-27T15:41:33.800Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T15:41:33.800Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-27T15:41:33.801Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T15:41:33.802Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-10-27T15:41:33.854Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T15:41:33.924Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T15:41:33.924Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T15:41:33.924Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T15:41:33.928Z - Time taken for 'loadNxPlugins' 121.678959ms
+[NX Daemon Server] - 2024-10-27T15:41:34.012Z - Time taken for 'build-project-configs' 74.05387499999998ms
+[NX Daemon Server] - 2024-10-27T15:41:34.028Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T15:41:34.029Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-10-27T15:41:34.029Z - Time taken for 'total for creating and serializing project graph' 227.107625ms
+[NX Daemon Server] - 2024-10-27T15:41:34.031Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-10-27T15:41:34.031Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 227. Response time: 2.
+[NX Daemon Server] - 2024-10-27T15:41:34.082Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-10-27T15:41:34.082Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-10-27T15:41:34.082Z - Handled HASH_TASKS. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2024-10-27T15:41:34.391Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T15:41:34.734Z - [WATCHER]: _tmp_80722_e461c221e2d4c57fec15526b45ff280b was deleted
+[NX Daemon Server] - 2024-10-27T15:41:34.735Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T15:41:34.836Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T15:41:34.836Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T15:41:34.836Z - [REQUEST]: _tmp_80722_e461c221e2d4c57fec15526b45ff280b
+[NX Daemon Server] - 2024-10-27T15:41:34.837Z - Time taken for 'hash changed files from watcher' 0.047209000000066226ms
+[NX Daemon Server] - 2024-10-27T15:41:34.845Z - Time taken for 'build-project-configs' 6.119584000000032ms
+[NX Daemon Server] - 2024-10-27T15:41:34.861Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T15:41:34.861Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-10-27T15:41:34.861Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-10-27T15:41:34.861Z - Time taken for 'total execution time for createProjectGraph()' 12.426790999999866ms
+[NX Daemon Server] - 2024-10-27T15:41:48.165Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T15:41:48.166Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T15:41:48.166Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T15:41:48.167Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-10-27T15:41:48.168Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-10-27T15:41:48.168Z - Time taken for 'total for creating and serializing project graph' 0.193875000000844ms
+[NX Daemon Server] - 2024-10-27T15:41:48.193Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-10-27T15:41:48.193Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 25.
+[NX Daemon Server] - 2024-10-27T15:41:48.388Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T15:42:10.462Z - [WATCHER]: .github/workflows/ci-main.yml was modified
+[NX Daemon Server] - 2024-10-27T15:42:10.463Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T15:42:10.564Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T15:42:10.565Z - [REQUEST]: .github/workflows/ci-main.yml
+[NX Daemon Server] - 2024-10-27T15:42:10.565Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T15:42:10.566Z - Time taken for 'hash changed files from watcher' 0.09183300000586314ms
+[NX Daemon Server] - 2024-10-27T15:42:10.577Z - Time taken for 'build-project-configs' 10.25841699999728ms
+[NX Daemon Server] - 2024-10-27T15:42:10.590Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T15:42:10.590Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-10-27T15:42:10.590Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-10-27T15:42:10.590Z - Time taken for 'total execution time for createProjectGraph()' 11.207457999997132ms
+[NX Daemon Server] - 2024-10-27T15:43:08.127Z - [WATCHER]: _tmp_81473_50a9c0cb37d95e53fabe07d8513bddb1 was deleted
+[NX Daemon Server] - 2024-10-27T15:43:08.127Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T15:43:08.329Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T15:43:08.329Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T15:43:08.329Z - [REQUEST]: _tmp_81473_50a9c0cb37d95e53fabe07d8513bddb1
+[NX Daemon Server] - 2024-10-27T15:43:08.330Z - Time taken for 'hash changed files from watcher' 0.10091700000339188ms
+[NX Daemon Server] - 2024-10-27T15:43:08.346Z - Time taken for 'build-project-configs' 13.582167000000481ms
+[NX Daemon Server] - 2024-10-27T15:43:08.360Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T15:43:08.360Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2024-10-27T15:43:08.360Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2024-10-27T15:43:08.360Z - Time taken for 'total execution time for createProjectGraph()' 12.201417000003858ms
+[NX Daemon Server] - 2024-10-27T15:43:13.961Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T15:43:13.962Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T15:43:13.963Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T15:43:13.964Z - [REQUEST]: Responding to the client with an error. Daemon outdated NX_VERSION_CHANGED
+Error: NX_VERSION_CHANGED
+    at handleMessage (/Users/elias/Desktop/development/lamentis-frontend/node_modules/nx/src/daemon/server/server.js:92:88)
+    at /Users/elias/Desktop/development/lamentis-frontend/node_modules/nx/src/daemon/server/server.js:72:15
+    at Socket.<anonymous> (/Users/elias/Desktop/development/lamentis-frontend/node_modules/nx/src/utils/consume-messages-from-socket.js:13:17)
+    at Socket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:191:23)
+[NX Daemon Server] - 2024-10-27T15:43:13.964Z - Done responding to the client null
+[NX Daemon Server] - 2024-10-27T15:43:13.964Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-10-27T15:43:13.964Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-10-27T15:43:13.965Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-10-27T15:43:13.967Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T15:43:13.967Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
+[NX Daemon Server] - 2024-10-27T15:43:13.967Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
+[NX Daemon Server] - 2024-10-27T15:43:13.968Z - Server stopped because: "Request to shutdown"

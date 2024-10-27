@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run-many -t lint --skip-nx-cache --fix",
-    "startTime": "2024-10-27T14:54:14.889Z",
-    "endTime": "2024-10-27T14:54:14.893Z",
+    "startTime": "2024-10-27T15:41:34.083Z",
+    "endTime": "2024-10-27T15:41:34.088Z",
     "inner": false
   },
   "tasks": []
