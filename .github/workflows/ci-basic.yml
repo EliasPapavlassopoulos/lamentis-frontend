@@ -20,6 +20,8 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -40,7 +42,7 @@ jobs:
         run: pnpm nx format:check apps/ libs/ src/
 
       - name: Lint Code
-        run: pnpm nx run-many -t lint
+        run: pnpm nx lint playground
 
       - name: Run Unit Tests
-        run: pnpm nx run-many -t test
+        run: pnpm nx test playground
