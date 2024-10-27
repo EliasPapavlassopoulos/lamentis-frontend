@@ -318,3 +318,26 @@ Error: This socket has been ended by the other party
 [NX Daemon Server] - 2024-10-27T16:19:47.006Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
 [NX Daemon Server] - 2024-10-27T16:19:47.006Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
 [NX Daemon Server] - 2024-10-27T16:19:47.007Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX Daemon Server] - 2024-10-27T16:20:57.234Z - Started listening on: /var/folders/yt/2j31dg_948n20jt_gkpmt2v40000gn/T/cda38033760b46abcac9/d.sock
+[NX Daemon Server] - 2024-10-27T16:20:57.236Z - [WATCHER]: Subscribed to changes within: /Users/elias/Desktop/development/lamentis-frontend (native)
+[NX Daemon Server] - 2024-10-27T16:20:57.243Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T16:20:57.243Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-27T16:20:57.244Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-27T16:20:57.245Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-10-27T16:20:57.291Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T16:20:57.376Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-10-27T16:20:57.376Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T16:20:57.377Z - [REQUEST]: 
+[NX Daemon Server] - 2024-10-27T16:20:57.380Z - Time taken for 'loadNxPlugins' 130.64491700000002ms
+[NX Daemon Server] - 2024-10-27T16:20:57.466Z - Time taken for 'build-project-configs' 77.23670800000002ms
+[NX Daemon Server] - 2024-10-27T16:20:57.483Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-10-27T16:20:57.484Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-10-27T16:20:57.485Z - Time taken for 'total for creating and serializing project graph' 238.88575ms
+[NX Daemon Server] - 2024-10-27T16:20:57.486Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-10-27T16:20:57.486Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 239. Response time: 2.
+[NX Daemon Server] - 2024-10-27T16:20:59.233Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-27T16:22:57.308Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-10-27T16:22:57.309Z - [WATCHER]: .gitignore was modified
+[NX Daemon Server] - 2024-10-27T16:22:57.310Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (sources)
+[NX Daemon Server] - 2024-10-27T16:22:57.310Z - [WATCHER]: Stopping the watcher for /Users/elias/Desktop/development/lamentis-frontend (outputs)
+[NX Daemon Server] - 2024-10-27T16:22:57.312Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
