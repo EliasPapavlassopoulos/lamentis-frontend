@@ -26,6 +26,10 @@
       "cache": true
     }
   },
+  "namedInputs": {
+    "production": ["{workspaceRoot}/package.json", "{projectRoot}/src/**/*.ts", "!{projectRoot}/src/**/*.spec.ts"],
+    "default": ["{workspaceRoot}/package.json", "{projectRoot}/src/**"]
+  },
   "defaultProject": "lamentis-frontend",
   "workspaceLayout": {
     "appsDir": "apps",

@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run lamentis-frontend:test --verbose",
-    "startTime": "2024-10-27T18:54:37.707Z",
-    "endTime": "2024-10-27T18:54:43.197Z",
+    "startTime": "2024-10-27T19:03:30.492Z",
+    "endTime": "2024-10-27T19:03:36.582Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "lamentis-frontend:test",
       "target": "test",
       "projectName": "lamentis-frontend",
-      "hash": "8135618476523160999",
-      "startTime": "2024-10-27T18:54:37.715Z",
-      "endTime": "2024-10-27T18:54:43.196Z",
+      "hash": "218258207999452604",
+      "startTime": "2024-10-27T19:03:30.502Z",
+      "endTime": "2024-10-27T19:03:36.581Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

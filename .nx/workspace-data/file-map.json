@@ -72,11 +72,11 @@
         },
         {
           "file": "nx.json",
-          "hash": "716263308430307170"
+          "hash": "1787632035813664895"
         },
         {
           "file": "package.json",
-          "hash": "16323767760556615512",
+          "hash": "17979122796839167809",
           "deps": [
             "npm:@angular-devkit/build-angular",
             "npm:@angular-eslint/eslint-plugin-template",

@@ -90,7 +90,7 @@
               "script": "start"
             },
             "metadata": {
-              "scriptContent": "ng serve",
+              "scriptContent": "nx serve lamentis-frontend",
               "runCommand": "yarn start"
             },
             "configurations": {},
