@@ -4,128 +4,213 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": ".cz-config.js",
-        "hash": "12340679440132345298"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "4165385352547808172"
-      },
-      {
-        "file": ".github/workflows/ci-main.yml",
-        "hash": "13403335056386561443"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "18168400278403753650"
-      },
-      {
-        "file": ".prettierrc.js",
-        "hash": "10551517433805002906"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "5331566439708925252"
-      },
-      {
-        "file": ".vscode/launch.json",
-        "hash": "17038929134016848735"
-      },
-      {
-        "file": ".vscode/tasks.json",
-        "hash": "5336636969995539451"
-      },
-      {
-        "file": "README.md",
-        "hash": "4014945733649683901"
-      },
-      {
-        "file": "angular.json",
-        "hash": "3945726402980729125"
-      },
-      {
-        "file": "eslint.config.mjs",
-        "hash": "4258672375920435769"
-      },
-      {
-        "file": "nx.json",
-        "hash": "8019327854095026930"
-      },
-      {
-        "file": "package.json",
-        "hash": "9174689465644003348"
-      },
-      {
-        "file": "public/favicon.ico",
-        "hash": "3988961587069885523"
-      },
-      {
-        "file": "server.ts",
-        "hash": "17247624917652365036"
-      },
-      {
-        "file": "src/app/app.component.html",
-        "hash": "5625725754865452477"
-      },
-      {
-        "file": "src/app/app.component.scss",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "src/app/app.component.spec.ts",
-        "hash": "9105803423200674278"
-      },
-      {
-        "file": "src/app/app.component.ts",
-        "hash": "15824736068539991196"
-      },
-      {
-        "file": "src/app/app.config.server.ts",
-        "hash": "14750464052796800194"
-      },
-      {
-        "file": "src/app/app.config.ts",
-        "hash": "6318051909506589375"
-      },
-      {
-        "file": "src/app/app.routes.ts",
-        "hash": "12397496131277534773"
-      },
-      {
-        "file": "src/index.html",
-        "hash": "446804800312013118"
-      },
-      {
-        "file": "src/main.server.ts",
-        "hash": "11653607448136507287"
-      },
-      {
-        "file": "src/main.ts",
-        "hash": "4927504514031276065"
-      },
-      {
-        "file": "src/styles.scss",
-        "hash": "5195668842064076916"
-      },
-      {
-        "file": "tsconfig.app.json",
-        "hash": "7541409410423088479"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "1134859888299763849"
-      },
-      {
-        "file": "tsconfig.spec.json",
-        "hash": "8918301549046766373"
-      },
-      {
-        "file": "yarn.lock",
-        "hash": "10855557413123548761"
-      }
-    ],
-    "projectFileMap": {}
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "lamentis-frontend": [
+        {
+          "file": ".cz-config.js",
+          "hash": "12340679440132345298"
+        },
+        {
+          "file": ".editorconfig",
+          "hash": "4165385352547808172"
+        },
+        {
+          "file": ".github/workflows/ci-main.yml",
+          "hash": "13403335056386561443"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "18168400278403753650"
+        },
+        {
+          "file": ".prettierrc.js",
+          "hash": "10551517433805002906"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "5331566439708925252"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17038929134016848735"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "5336636969995539451"
+        },
+        {
+          "file": "README.md",
+          "hash": "4014945733649683901"
+        },
+        {
+          "file": "eslint.config.mjs",
+          "hash": "5546696716663360386",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "716263308430307170"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "3445165083406062898"
+        },
+        {
+          "file": "package.json",
+          "hash": "2574099568891259538",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-eslint/eslint-plugin-template",
+            "npm:@angular-eslint/template-parser",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@eslint/js",
+            "npm:@nrwl/workspace",
+            "npm:@nx/eslint-plugin",
+            "npm:@types/express",
+            "npm:@types/jasmine",
+            "npm:@types/node",
+            "npm:commitizen",
+            "npm:cz-conventional-changelog",
+            "npm:cz-customizable",
+            "npm:eslint",
+            "npm:globals",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:nx",
+            "npm:prettier",
+            "npm:prettier-plugin-organize-attributes",
+            "npm:prettier-plugin-packagejson",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/platform-server",
+            "npm:@angular/router",
+            "npm:@angular/ssr",
+            "npm:express",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "3474367532379719718"
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "server.ts",
+          "hash": "17247624917652365036",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/ssr",
+            "npm:express"
+          ]
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "5625725754865452477"
+        },
+        {
+          "file": "src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "9105803423200674278",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "15824736068539991196",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.config.server.ts",
+          "hash": "14750464052796800194",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-server"
+          ]
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "6318051909506589375",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/app/app.routes.ts",
+          "hash": "12397496131277534773",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/index.html",
+          "hash": "446804800312013118"
+        },
+        {
+          "file": "src/main.server.ts",
+          "hash": "11653607448136507287",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "4927504514031276065",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "7541409410423088479"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "1134859888299763849"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "8918301549046766373"
+        },
+        {
+          "file": "yarn.lock",
+          "hash": "3194646333450670973"
+        }
+      ]
+    }
   }
 }

@@ -1,13 +1,19 @@
-const { FlatCompat } = require('@eslint/eslintrc');
-const js = require('@eslint/js');
-const nxEslintPlugin = require('@nx/eslint-plugin');
+import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+import nxEslintPlugin from '@nx/eslint-plugin';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+// Definiere __dirname für das ES-Modul
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
   recommendedConfig: js.configs.recommended,
 });
 
-module.exports = [
+export default [
   { plugins: { '@nx': nxEslintPlugin } },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
@@ -28,33 +34,27 @@ module.exports = [
       'no-restricted-imports': ['error', { patterns: ['**/public-api'] }],
     },
   },
+  // TypeScript-Konfiguration
   ...compat.config({ extends: ['plugin:@nx/typescript'] }).map((config) => ({
     ...config,
     files: ['**/*.ts', '**/*.tsx'],
-    rules: {
-      ...config.rules,
-    },
   })),
+  // JavaScript-Konfiguration
   ...compat.config({ extends: ['plugin:@nx/javascript'] }).map((config) => ({
     ...config,
     files: ['**/*.js', '**/*.jsx'],
-    rules: {
-      ...config.rules,
-    },
   })),
+  // Spezielle Regeln für Tests
   ...compat.config({ env: { jest: true } }).map((config) => ({
     ...config,
     files: ['**/*.spec.ts', '**/*.spec.tsx', '**/*.spec.js', '**/*.spec.jsx'],
-    rules: {
-      ...config.rules,
-    },
   })),
+  // Regeln für Angular HTML Templates
   ...compat.config({ extends: ['plugin:@angular-eslint/template/recommended'] }).map((config) => ({
     ...config,
     files: ['**/*.html'],
     ignores: ['index.html'],
     rules: {
-      ...config.rules,
       '@angular-eslint/template/banana-in-box': 'error',
       '@angular-eslint/template/click-events-have-key-events': 'error',
       '@angular-eslint/template/eqeqeq': 'error',
@@ -69,5 +69,6 @@ module.exports = [
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
     },
   })),
+  // Globale Ignorier-Regeln
   { ignores: ['.angular', 'libs/types/src/lib/api'] },
 ];

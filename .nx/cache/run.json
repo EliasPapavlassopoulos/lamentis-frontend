@@ -1,9 +1,21 @@
 {
   "run": {
     "command": "nx run-many -t lint --skip-nx-cache --fix",
-    "startTime": "2024-10-27T18:00:26.740Z",
-    "endTime": "2024-10-27T18:00:26.745Z",
+    "startTime": "2024-10-27T18:30:02.367Z",
+    "endTime": "2024-10-27T18:30:04.228Z",
     "inner": false
   },
-  "tasks": []
+  "tasks": [
+    {
+      "taskId": "lamentis-frontend:lint",
+      "target": "lint",
+      "projectName": "lamentis-frontend",
+      "hash": "1048112656904764810",
+      "startTime": "2024-10-27T18:30:02.378Z",
+      "endTime": "2024-10-27T18:30:04.226Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
 }
