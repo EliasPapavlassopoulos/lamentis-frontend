@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  lint-and-build:
+  lint-build-format:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,21 +19,25 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Setze auf die Version, die dein Projekt benötigt
+          node-version: '18' # Passe die Node-Version an dein Projekt an
 
       - name: Install dependencies
         run: |
           corepack enable
           yarn install
 
+      - name: Run Prettier
+        run: |
+          yarn prettier --check .  # Prüft, ob der Code Prettier-Formatierungsregeln erfüllt
+
       - name: Run ESLint
         run: |
-          yarn lint  # Führt Linting aus, abhängig von deiner Konfiguration
+          yarn lint  # Linting-Schritt für Syntax- und Style-Überprüfungen
 
       - name: Build project
         run: |
-          yarn build  # Baut das Projekt, um sicherzustellen, dass keine Build-Fehler auftreten
+          yarn build  # Baut das Projekt, um sicherzustellen, dass es erfolgreich kompiliert
 
       - name: Run tests (optional)
         run: |
-          yarn test --watch=false --browsers=ChromeHeadless  # Passe den Test-Befehl an dein Setup an
+          yarn test --watch=false --browsers=ChromeHeadless  # Optionaler Test-Schritt
