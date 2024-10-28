@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "build": "ng build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint . --fix",
     "lint:component": "eslint src/app/app.component.ts --fix --no-cache",
     "lint:fix": "eslint . --fix --no-cache",
