@@ -1,71 +1,44 @@
 {
   "name": "lamentis-frontend",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
-    "build": "nx build lamentis-frontend",
-    "commit": "CZ_CONFIG=./cz-config.js git-cz",
-    "fix-deps": "rm -f .eslintcache && yarn nx reset && yarn nx run-many -t lint --skip-nx-cache --fix && yarn install",
-    "format": "nx format:write --base=origin/main --head=HEAD",
     "ng": "ng",
-    "serve:ssr:lamentis-frontend": "node dist/lamentis-frontend/server/server.mjs",
-    "start": "nx serve lamentis-frontend",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "watch": "ng build --watch --configuration development"
+    "serve:ssr:lamentis-frontend": "node dist/lamentis-frontend/server/server.mjs"
   },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    }
-  },
+  "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
-    "@angular/core": "^18.2.9",
+    "@angular/core": "^18.2.0",
     "@angular/forms": "^18.2.0",
     "@angular/platform-browser": "^18.2.0",
-    "@angular/platform-browser-dynamic": "^18.2.9",
+    "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.10",
-    "bootstrap": "^5.3.3",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "^0.15.0"
+    "zone.js": "~0.14.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.10",
-    "@angular-eslint/eslint-plugin-template": "^18.4.0",
-    "@angular-eslint/template-parser": "^18.4.0",
     "@angular/cli": "^18.2.10",
     "@angular/compiler-cli": "^18.2.0",
-    "@eslint/js": "^9.13.0",
-    "@nrwl/workspace": "^19.8.4",
-    "@nx/eslint-plugin": "^20.0.6",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
-    "commitizen": "^4.3.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^7.2.1",
-    "eslint": "^9.13.0",
-    "globals": "^15.11.0",
-    "jasmine-core": "^5.4.0",
-    "karma": "^6.4.4",
-    "karma-chrome-launcher": "^3.2.0",
+    "jasmine-core": "~5.2.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
-    "karma-jasmine": "^5.1.0",
-    "karma-jasmine-html-reporter": "^2.1.0",
-    "karma-webpack": "^5.0.1",
-    "nx": "^20.0.6",
-    "prettier": "^3.3.3",
-    "prettier-plugin-organize-attributes": "^1.0.0",
-    "prettier-plugin-packagejson": "^2.5.3",
-    "typescript": "~5.5.2",
-    "typescript-eslint": "^8.11.0",
-    "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4"
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.5.2"
   }
 }
