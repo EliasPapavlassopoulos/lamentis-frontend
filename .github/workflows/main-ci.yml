@@ -1,0 +1,43 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-build-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Passe die Node-Version an dein Projekt an
+
+      - name: Install dependencies
+        run: |
+          corepack enable
+          yarn install
+
+      - name: Run Prettier
+        run: |
+          yarn prettier --check .  # Prüft, ob der Code Prettier-Formatierungsregeln erfüllt
+
+      - name: Run ESLint
+        run: |
+          yarn lint  # Linting-Schritt für Syntax- und Style-Überprüfungen
+
+      - name: Build project
+        run: |
+          yarn build  # Baut das Projekt, um sicherzustellen, dass es erfolgreich kompiliert
+
+      - name: Run tests
+        run: |
+          yarn test --watch=false --browsers=ChromeHeadless  # Optionaler Test-Schritt
