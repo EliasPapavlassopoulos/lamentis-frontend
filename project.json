@@ -13,8 +13,8 @@
         "main": "src/main.ts",
         "tsConfig": "tsconfig.app.json",
         "assets": ["src/assets"],
-        "styles": ["src/styles.scss"],
-        "scripts": []
+        "styles": ["src/styles.scss", "node_modules/bootstrap/dist/css/bootstrap.min.css"],
+        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
       }
     },
     "serve": {
@@ -37,8 +37,8 @@
         "tsConfig": "tsconfig.spec.json",
         "karmaConfig": "karma.conf.js",
         "assets": ["src/assets"],
-        "styles": ["src/styles.scss"],
-        "scripts": []
+        "styles": ["src/styles.scss", "node_modules/bootstrap/dist/css/bootstrap.min.css"],
+        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
       }
     }
   }
