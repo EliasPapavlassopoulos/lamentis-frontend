@@ -10,5 +10,5 @@ import { PictureComponent } from '@ethlete/cdk';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'lamentis-frontend';
+  title = 'Hello, lamentis-frontend';
 }
