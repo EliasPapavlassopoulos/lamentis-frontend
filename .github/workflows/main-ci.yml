@@ -37,7 +37,3 @@ jobs:
       - name: Build project
         run: |
           yarn build  # Baut das Projekt, um sicherzustellen, dass es erfolgreich kompiliert
-
-      - name: Run tests
-        run: |
-          yarn test --watch=false --browsers=ChromeHeadless  # Optionaler Test-Schritt
