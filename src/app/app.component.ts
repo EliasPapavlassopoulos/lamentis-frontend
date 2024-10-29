@@ -9,6 +9,4 @@ import { PictureComponent } from '@ethlete/cdk';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'Hello, lamentis-frontend';
-}
+export class AppComponent {}
