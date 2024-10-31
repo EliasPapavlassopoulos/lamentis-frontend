@@ -66,7 +66,6 @@ module.exports = [
       '@angular-eslint/template/no-negated-async': 'error',
       '@angular-eslint/template/no-positive-tabindex': 'error',
       '@angular-eslint/template/use-track-by-function': 'error',
-      '@angular-eslint/template/prefer-self-closing-tags': 'error',
     },
   })),
   { ignores: ['.angular', 'libs/types/src/lib/api'] },
