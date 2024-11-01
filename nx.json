@@ -13,14 +13,10 @@
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": ["default", "!{projectRoot}/.eslintrc.json", "!{projectRoot}/eslint.config.js"]
   },
+  "nxCloudId": "6721142c7ce5d95bd86ba615",
   "generators": {
     "@nx/angular:component": {
       "style": "none"
-    }
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default"
     }
   }
 }
