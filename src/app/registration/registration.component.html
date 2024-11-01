@@ -1,12 +1,12 @@
 <!-- registration.component.html -->
 <form [formGroup]="registrationForm" (ngSubmit)="register()">
   <div>
-    <label for="email">Email:</label>
+    <label class="text-white">Email:</label>
     <input [formControl]="registrationForm.controls.email" type="email" />
   </div>
 
   <div>
-    <label for="password">Password:</label>
+    <label>Password:</label>
     <input [formControl]="registrationForm.controls.password" type="password" />
   </div>
 

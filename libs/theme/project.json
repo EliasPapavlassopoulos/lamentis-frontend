@@ -1,0 +1,30 @@
+{
+  "name": "theme",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/theme/src",
+  "prefix": "lamentis",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/theme/ng-package.json",
+        "tailwindConfig": "libs/theme/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/theme/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/theme/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
