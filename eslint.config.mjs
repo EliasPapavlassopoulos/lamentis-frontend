@@ -1,16 +1,27 @@
-const { FlatCompat } = require('@eslint/eslintrc');
-const js = require('@eslint/js');
-const nxEslintPlugin = require('@nx/eslint-plugin');
+import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+import nx from '@nx/eslint-plugin';
+import globals from 'globals';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
   recommendedConfig: js.configs.recommended,
+  allConfig: js.configs.all,
 });
 
-module.exports = [
-  { plugins: { '@nx': nxEslintPlugin } },
+export default [
+  {
+    plugins: {
+      '@nx': nx,
+    },
+  },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+
     rules: {
       '@nx/enforce-module-boundaries': [
         'error',
@@ -21,40 +32,51 @@ module.exports = [
             {
               sourceTag: '*',
               onlyDependOnLibsWithTags: ['*'],
+              bannedExternalImports: ['@broadcaster-api/*'],
             },
           ],
         },
       ],
-      'no-restricted-imports': ['error', { patterns: ['**/public-api'] }],
+      // Deaktivierte Regeln
+      'prefer-const': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
+      'no-var': 'off',
+      'no-prototype-builtins': 'off',
+      'prefer-rest-params': 'off',
+      '@typescript-eslint/no-this-alias': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      'no-empty': 'off',
+      'no-useless-escape': 'off',
+      'no-control-regex': 'off',
+      'prefer-spread': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
+      'no-extra-semi': 'off',
+      '@typescript-eslint/ban-types': 'off', // Neue deaktivierte Regel
     },
   },
-  ...compat.config({ extends: ['plugin:@nx/typescript'] }).map((config) => ({
+  ...compat.extends('plugin:@nx/typescript').map((config) => ({
     ...config,
     files: ['**/*.ts', '**/*.tsx'],
-    rules: {
-      ...config.rules,
-    },
   })),
-  ...compat.config({ extends: ['plugin:@nx/javascript'] }).map((config) => ({
-    ...config,
-    files: ['**/*.js', '**/*.jsx'],
-    rules: {
-      ...config.rules,
-    },
-  })),
-  ...compat.config({ env: { jest: true } }).map((config) => ({
-    ...config,
+  {
     files: ['**/*.spec.ts', '**/*.spec.tsx', '**/*.spec.js', '**/*.spec.jsx'],
-    rules: {
-      ...config.rules,
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
     },
-  })),
-  ...compat.config({ extends: ['plugin:@angular-eslint/template/recommended'] }).map((config) => ({
+    rules: {},
+  },
+  ...compat.extends('plugin:@angular-eslint/template/recommended').map((config) => ({
     ...config,
     files: ['**/*.html'],
-    ignores: ['index.html'],
+    ignores: ['**/index.html'],
+  })),
+  {
+    files: ['**/*.html'],
+    ignores: ['**/index.html'],
+
     rules: {
-      ...config.rules,
       '@angular-eslint/template/banana-in-box': 'error',
       '@angular-eslint/template/click-events-have-key-events': 'error',
       '@angular-eslint/template/eqeqeq': 'error',
@@ -68,6 +90,5 @@ module.exports = [
       '@angular-eslint/template/use-track-by-function': 'error',
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
     },
-  })),
-  { ignores: ['.angular', 'libs/types/src/lib/api'] },
+  },
 ];

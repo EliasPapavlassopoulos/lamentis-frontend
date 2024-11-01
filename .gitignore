@@ -43,3 +43,13 @@ Thumbs.db
 
 # Nx
 /.nx
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
+
+
+
+.nx/cache
+.nx/workspace-data
+.angular
