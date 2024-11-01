@@ -1,7 +1,7 @@
 <!-- registration.component.html -->
 <form [formGroup]="registrationForm" (ngSubmit)="register()">
   <div>
-    <label for="email">Email:</label>
+    <label class="text-[blue]" for="email">Email:</label>
     <input [formControl]="registrationForm.controls.email" type="email" />
   </div>
 
