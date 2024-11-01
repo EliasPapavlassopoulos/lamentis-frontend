@@ -29,7 +29,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular
+/.angular/cache
 .sass-cache/
 /connect.lock
 /coverage
@@ -40,16 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-
-# Nx
-/.nx
-# Firebase
-.firebase
-*-debug.log
-.runtimeconfig.json
-
-
-
-.nx/cache
-.nx/workspace-data
-.angular
