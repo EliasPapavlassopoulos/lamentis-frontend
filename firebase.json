@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "main",
+    "public": "dist/lamentis-frontend",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
