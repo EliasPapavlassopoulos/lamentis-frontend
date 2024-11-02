@@ -1,10 +1,6 @@
-Hier ist die Antwort in Form einer README.md Datei für deine Projektstruktur und Empfehlungen zur Nutzung von Standalone-Komponenten in einem Angular-Projekt.
-
-# Projektstruktur für ein Angular-Projekt mit Standalone-Komponenten
+# Projektstruktur
 
 Diese Anleitung beschreibt eine zukunftssichere Projektstruktur für ein Angular-Projekt, das auf **Standalone-Komponenten** setzt. Die Struktur sorgt für Übersichtlichkeit, Skalierbarkeit und erleichtert das Hinzufügen neuer Komponenten und Features.
-
-## Empfohlene Projektstruktur
 
 ## Empfohlene Projektstruktur
 
