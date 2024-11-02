@@ -3,18 +3,22 @@
 
 name: Deploy to Firebase Hosting on merge
 on:
-  push:
-    branches:
-      - main
+    push:
+        branches:
+            - main
 jobs:
-  build_and_deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LAMENTIS_584565 }}
-          channelId: live
-          projectId: lamentis-584565
+    build_and_deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: '20'
+                  cache: 'yarn'
+            - run: yarn install --frozen-lockfile && yarn build
+            - uses: FirebaseExtended/action-hosting-deploy@v0
+              with:
+                  repoToken: ${{ secrets.GITHUB_TOKEN }}
+                  firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LAMENTIS_584565 }}
+                  channelId: live
+                  projectId: lamentis-584565
