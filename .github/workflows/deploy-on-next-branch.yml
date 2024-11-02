@@ -16,13 +16,13 @@ jobs:
                   cache: 'yarn'
             - run: yarn install --frozen-lockfile
             - name: Format Check
-              run: yarn format
+              run: yarn format:check
             - name: Lint Check
               run: yarn lint
             - name: Build
               run: yarn build
             - name: Storybook Build
-              run: yarn build-storybook
+              run: yarn storybook:build
             - name: Deploy to Firebase Preview
               uses: FirebaseExtended/action-hosting-deploy@v0
               with:

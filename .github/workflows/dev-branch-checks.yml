@@ -1,9 +1,12 @@
-name: CI Checks on Pull Requests
+name: CI Checks on dev branch
 
-on: pull_request
+on:
+    push:
+        branches:
+            - dev-*
 
 jobs:
-    ci_checks:
+    dev-checks:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
