@@ -6,44 +6,47 @@ Diese Anleitung beschreibt eine zukunftssichere Projektstruktur für ein Angular
 
 ## Empfohlene Projektstruktur
 
+## Empfohlene Projektstruktur
+
+```plaintext
 src/
-│
 ├── app/
-│ ├── core/
-│ │ ├── services/ // Globale Services (z.B. Auth, API, Logger)
-│ │ ├── guards/ // Auth- und Routing-Guards
-│ │ ├── interceptors/ // HTTP-Interceptors
-│ │ ├── config/ // Zentrale Konfigurationsdateien und -daten
-│ │ └── index.ts // Optionaler Export aller Core-Services
-│ │
-│ ├── shared/
-│ │ ├── components/ // Wiederverwendbare UI-Komponenten als Standalone-Komponenten
-│ │ ├── directives/ // Wiederverwendbare Directives
-│ │ ├── pipes/ // Wiederverwendbare Pipes
-│ │ ├── models/ // Schnittstellen und Typen
-│ │ ├── utils/ // Utility-Funktionen
-│ │ └── index.ts // Optionaler Export aller Shared-Komponenten
-│ │
-│ ├── features/ // Feature-spezifische Standalone-Komponenten, organisiert nach Funktion
-│ │ ├── feature1/
-│ │ │ ├── components/ // Feature1-spezifische Standalone-Komponenten
-│ │ │ ├── services/ // Feature1-spezifische Services
-│ │ │ ├── pipes/ // Feature1-spezifische Pipes
-│ │ │ ├── feature1.routes.ts// Routing für Feature1-Komponenten
-│ │ │ └── index.ts
-│ │ └── feature2/
-│ │ ├── components/
-│ │ ├── services/
-│ │ ├── pipes/
-│ │ └── feature2.routes.ts
-│ │
-│ ├── app.routes.ts // Haupt-Routing-Datei für die Anwendung
-│ ├── app.component.ts // Root-Komponente der Anwendung
-│ └── index.ts // Optionaler Export für alle Root-Komponenten und -Routen
+│   ├── core/
+│   │   ├── services/             // Globale Services (z.B. Auth, API, Logger)
+│   │   ├── guards/               // Auth- und Routing-Guards
+│   │   ├── interceptors/         // HTTP-Interceptors
+│   │   ├── config/               // Zentrale Konfigurationsdateien und -daten
+│   │   └── index.ts              // Optionaler Export aller Core-Services
+│   │
+│   ├── shared/
+│   │   ├── components/           // Wiederverwendbare UI-Komponenten als Standalone-Komponenten
+│   │   ├── directives/           // Wiederverwendbare Directives
+│   │   ├── pipes/                // Wiederverwendbare Pipes
+│   │   ├── models/               // Schnittstellen und Typen
+│   │   ├── utils/                // Utility-Funktionen
+│   │   └── index.ts              // Optionaler Export aller Shared-Komponenten
+│   │
+│   ├── features/                 // Feature-spezifische Standalone-Komponenten, organisiert nach Funktion
+│   │   ├── feature1/
+│   │   │   ├── components/       // Feature1-spezifische Standalone-Komponenten
+│   │   │   ├── services/         // Feature1-spezifische Services
+│   │   │   ├── pipes/            // Feature1-spezifische Pipes
+│   │   │   ├── feature1.routes.ts// Routing für Feature1-Komponenten
+│   │   │   └── index.ts
+│   │   └── feature2/
+│   │       ├── components/
+│   │       ├── services/
+│   │       ├── pipes/
+│   │       └── feature2.routes.ts
+│   │
+│   ├── app.routes.ts             // Haupt-Routing-Datei für die Anwendung
+│   ├── app.component.ts          // Root-Komponente der Anwendung
+│   └── index.ts                  // Optionaler Export für alle Root-Komponenten und -Routen
 │
-├── environments/ // Umgebungskonfigurationsdateien (z.B. environment.ts, environment.prod.ts)
+├── environments/                 // Umgebungskonfigurationsdateien (z.B. environment.ts, environment.prod.ts)
 │
-└── assets/ // Statische Dateien (Bilder, SVGs, JSONs)
+└── assets/                       // Statische Dateien (Bilder, SVGs, JSONs)
+```
 
 ## Erläuterungen zur Struktur
 
