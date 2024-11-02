@@ -5,7 +5,12 @@ import { RouterOutlet } from '@angular/router';
     selector: 'lamentis-root',
     standalone: true,
     imports: [RouterOutlet],
-    templateUrl: './app.component.html',
+    template: `
+        <p class="text-pretty pt-[20rem] text-center text-[3rem]">
+            See you soon !
+        </p>
+        <router-outlet />
+    `,
 })
 export class AppComponent {
     title = 'lamentis-frontend';
