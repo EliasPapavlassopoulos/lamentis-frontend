@@ -34,3 +34,4 @@ jobs:
                   repoToken: ${{ secrets.GITHUB_TOKEN }}
                   firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LAMENTIS_584565 }}
                   projectId: lamentis-584565
+                  channelId: preview
