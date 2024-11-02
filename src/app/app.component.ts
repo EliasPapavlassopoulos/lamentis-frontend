@@ -1,60 +1,57 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {
+    FormControl,
+    FormGroup,
+    ReactiveFormsModule,
+    Validators,
+} from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { AuthService } from './core/services';
 
 @Component({
     selector: 'lamentis-root',
     standalone: true,
-    imports: [RouterOutlet],
+    imports: [RouterOutlet, ReactiveFormsModule],
     template: `
         <p class="text-pretty pt-[20rem] text-center text-[3rem]">
             See you soon !
         </p>
+
+        <form [formGroup]="registrationForm" (ngSubmit)="registrateUser()">
+            <input
+                type="email"
+                placeholder="email"
+                [formControl]="registrationForm.controls.email" />
+            <input
+                type="password"
+                placeholder="password"
+                [formControl]="registrationForm.controls.password" />
+
+            <button [disabled]="registrationForm.invalid" type="submit">
+                register now
+            </button>
+        </form>
+
         <router-outlet />
     `,
 })
 export class AppComponent {
-    title = 'lamentis-frontend';
+    #authService = inject(AuthService);
+
+    registrationForm = new FormGroup({
+        email: new FormControl(null, [Validators.required, Validators.email]),
+        password: new FormControl(null, [
+            Validators.required,
+            Validators.minLength(8),
+        ]),
+    });
+
+    registrateUser() {
+        const email = this.registrationForm.controls.email.getRawValue();
+        const password = this.registrationForm.controls.password.getRawValue();
+
+        if (!email || !password) return;
+
+        this.#authService.register(email, password);
+    }
 }
-
-// TODO: AuthService
-// // auth.service.ts
-// import { Injectable } from '@angular/core';
-// import { Auth, User, user } from '@angular/fire/auth';
-// import { UserCredential, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-// import { Observable, from } from 'rxjs';
-
-// @Injectable({
-//   providedIn: 'root',
-// })
-// export class AuthService {
-//   currentUser$: Observable<User | null>;
-
-//   constructor(private auth: Auth) {
-//     this.currentUser$ = user(this.auth);
-//   }
-
-//   // register with e-mail and password
-//   register(email: string, password: string): Observable<UserCredential> {
-//     return from(createUserWithEmailAndPassword(this.auth, email, password));
-//   }
-
-//   // login with e-mal and password
-//   login(email: string, password: string): Observable<UserCredential> {
-//     return from(signInWithEmailAndPassword(this.auth, email, password));
-//   }
-
-//   // logout
-//   logout(): Observable<void> {
-//     return from(signOut(this.auth));
-//   }
-
-//   // get current user
-//   getCurrentUser(): User | null {
-//     return this.auth.currentUser;
-//   }
-
-//   // state of authentification as observable
-//   getAuthState(): Observable<User | null> {
-//     return this.currentUser$;
-//   }
-// }
