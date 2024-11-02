@@ -19,9 +19,7 @@
             "selector": "lamentis-root",
             "styleUrls": [],
             "styles": [],
-            "templateUrl": [
-                "./app.component.html"
-            ],
+            "templateUrl": ["./app.component.html"],
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [],
