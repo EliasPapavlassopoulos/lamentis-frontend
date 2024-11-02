@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 /* Ihre zusätzlichen globalen Styles */
+body {
+    background: #000;
+    display: block;
+    color: white;
+}
