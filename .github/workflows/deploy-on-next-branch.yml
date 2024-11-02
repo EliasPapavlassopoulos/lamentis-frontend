@@ -11,7 +11,8 @@ permissions:
     pull-requests: write
 
 jobs:
-    build_and_deploy_preview:
+    build_and_preview:
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -19,7 +20,7 @@ jobs:
               with:
                   node-version: '20'
                   cache: 'yarn'
-            - run: yarn install --frozen-lockfile
+            - run: yarn install --frozen-lockfile && yarn build
             - name: Format Check
               run: yarn format
             - name: Lint Check
@@ -28,10 +29,8 @@ jobs:
               run: yarn build
             - name: Storybook Build
               run: yarn build-storybook
-            - name: Deploy to Firebase Preview
-              uses: FirebaseExtended/action-hosting-deploy@v0
+            - uses: FirebaseExtended/action-hosting-deploy@v0
               with:
                   repoToken: ${{ secrets.GITHUB_TOKEN }}
                   firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LAMENTIS_584565 }}
                   projectId: lamentis-584565
-                  channelId: preview
