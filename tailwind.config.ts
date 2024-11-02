@@ -35,6 +35,9 @@ const cfg: Config = {
             notice: '#FF8F58',
             error: '#FF5858',
         },
+        fontSize: {
+            base: '62.5%', // 1rem = 10px
+        },
         screens: {
             sm: '640px',
             md: '768px',

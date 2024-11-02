@@ -6,8 +6,7 @@ import { RouterOutlet } from '@angular/router';
     standalone: true,
     imports: [RouterOutlet],
     template: `
-        <p
-            class="text-pretty mt-40 text-center text-[2.4rem] text-lamentis-neongreen">
+        <p class="text-pretty mt-40 text-center text-[2.4rem]">
             See you soon !
         </p>
         <router-outlet />

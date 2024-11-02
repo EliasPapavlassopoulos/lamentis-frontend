@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ihre zusätzlichen globalen Styles */
+// global styles
+html {
+    // 1rem = 10px
+    font-size: 62.5%;
+}
+
 body {
-    background: rgb(var(--et-color-primary));
-    display: block;
+    background: black;
     color: white;
 }
