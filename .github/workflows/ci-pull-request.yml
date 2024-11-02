@@ -13,10 +13,10 @@ jobs:
                   cache: 'yarn'
             - run: yarn install --frozen-lockfile
             - name: Format Check
-              run: yarn format:check
+              run: yarn format
             - name: Lint Check
               run: yarn lint
             - name: Build
               run: yarn build
             - name: Storybook Build
-              run: yarn storybook:build
+              run: yarn build-storybook
