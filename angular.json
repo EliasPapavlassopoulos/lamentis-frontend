@@ -27,7 +27,6 @@
                         "outputPath": "dist/lamentis-frontend",
                         "index": "src/index.html",
                         "main": "src/main.ts",
-                        "polyfills": "src/polyfills.ts",
                         "tsConfig": "tsconfig.app.json",
                         "assets": ["src/favicon.ico", "src/assets"],
                         "styles": ["src/styles.scss"],
@@ -76,6 +75,26 @@
                     "builder": "@angular-eslint/builder:lint",
                     "options": {
                         "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+                    }
+                },
+                "storybook": {
+                    "builder": "@storybook/angular:start-storybook",
+                    "options": {
+                        "configDir": ".storybook",
+                        "browserTarget": "lamentis-frontend:build",
+                        "compodoc": true,
+                        "compodocArgs": ["-e", "json", "-d", "."],
+                        "port": 6006
+                    }
+                },
+                "build-storybook": {
+                    "builder": "@storybook/angular:build-storybook",
+                    "options": {
+                        "configDir": ".storybook",
+                        "browserTarget": "lamentis-frontend:build",
+                        "compodoc": true,
+                        "compodocArgs": ["-e", "json", "-d", "."],
+                        "outputDir": "storybook-static"
                     }
                 }
             }
