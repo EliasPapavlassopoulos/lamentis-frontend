@@ -9,7 +9,6 @@ import { RouterOutlet } from '@angular/router';
         <p class="text-pretty pt-[20rem] text-center text-[3rem]">
             See you soon !
         </p>
-
         <router-outlet />
     `,
 })

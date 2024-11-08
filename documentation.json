@@ -1,7 +1,176 @@
 {
     "pipes": [],
     "interfaces": [],
-    "injectables": [],
+    "injectables": [
+        {
+            "name": "AuthService",
+            "id": "injectable-AuthService-3e98b2e4a387f4ebf34dffcf6ab77e7309dbfac2450a1a4b118d611a7b0e5eccd71e848be9fa14cb946f70ca877801cd7e2f1a9f19b98bbaa4e8522cc51ecd98",
+            "file": "src/app/core/services/auth.service.ts",
+            "properties": [
+                {
+                    "name": "currentUser$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<User | null>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getAuthState",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<User | null>",
+                    "typeParameters": [],
+                    "line": 43,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getCurrentUser",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "User | null",
+                    "typeParameters": [],
+                    "line": 39,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "login",
+                    "args": [
+                        {
+                            "name": "email",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "password",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<UserCredential>",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "email",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "password",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "logout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<void>",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "register",
+                    "args": [
+                        {
+                            "name": "email",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "password",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<UserCredential>",
+                    "typeParameters": [],
+                    "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "email",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "password",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { Auth, User, user } from '@angular/fire/auth';\nimport {\n    UserCredential,\n    connectAuthEmulator,\n    createUserWithEmailAndPassword,\n    signInWithEmailAndPassword,\n    signOut,\n} from 'firebase/auth';\nimport { Observable, from } from 'rxjs';\nimport { environment } from '../../environments/environment';\n\n@Injectable({\n    providedIn: 'root',\n})\nexport class AuthService {\n    currentUser$: Observable<User | null>;\n\n    constructor(private auth: Auth) {\n        if (!environment.production) {\n            connectAuthEmulator(this.auth, 'http://localhost:9099'); //use the emulator when not in production\n        }\n\n        this.currentUser$ = user(this.auth);\n    }\n\n    register(email: string, password: string): Observable<UserCredential> {\n        return from(createUserWithEmailAndPassword(this.auth, email, password));\n    }\n\n    login(email: string, password: string): Observable<UserCredential> {\n        return from(signInWithEmailAndPassword(this.auth, email, password));\n    }\n\n    logout(): Observable<void> {\n        return from(signOut(this.auth));\n    }\n\n    getCurrentUser(): User | null {\n        return this.auth.currentUser;\n    }\n\n    getAuthState(): Observable<User | null> {\n        return this.currentUser$;\n    }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "auth",
+                        "type": "Auth",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 17,
+                "jsdoctags": [
+                    {
+                        "name": "auth",
+                        "type": "Auth",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
     "guards": [],
     "interceptors": [],
     "classes": [],
@@ -9,7 +178,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-6b8671e8cf2ba7cef9f5baf3be11757136ef4b162c4177416a0033c30ed4bf1e12092f8fcab6ee9db9c4929c0e1ef9ba40aef0b7efdf195db84a2d4fd9649232",
+            "id": "component-AppComponent-a48a71ab6da99af28895276a57a4cb9f1df5b0848c6c1ea09597417607de3d64e6aea541539f425247108825fa4bca73a81e3ef63d3e30a8886caf59e6aba66a",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -19,26 +188,13 @@
             "selector": "lamentis-root",
             "styleUrls": [],
             "styles": [],
-            "templateUrl": [
-                "./app.component.html"
-            ],
+            "template": "<p class=\"text-pretty pt-[20rem] text-center text-[3rem]\">\n    See you soon !\n</p>\n<router-outlet />\n",
+            "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [],
             "outputsClass": [],
-            "propertiesClass": [
-                {
-                    "name": "title",
-                    "defaultValue": "'lamentis-frontend'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "indexKey": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 11
-                }
-            ],
+            "propertiesClass": [],
             "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
@@ -53,12 +209,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n\n@Component({\n    selector: 'lamentis-root',\n    standalone: true,\n    imports: [RouterOutlet],\n    templateUrl: './app.component.html',\n})\nexport class AppComponent {\n    title = 'lamentis-frontend';\n}\n\n// TODO: AuthService\n// // auth.service.ts\n// import { Injectable } from '@angular/core';\n// import { Auth, User, user } from '@angular/fire/auth';\n// import { UserCredential, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';\n// import { Observable, from } from 'rxjs';\n\n// @Injectable({\n//   providedIn: 'root',\n// })\n// export class AuthService {\n//   currentUser$: Observable<User | null>;\n\n//   constructor(private auth: Auth) {\n//     this.currentUser$ = user(this.auth);\n//   }\n\n//   // register with e-mail and password\n//   register(email: string, password: string): Observable<UserCredential> {\n//     return from(createUserWithEmailAndPassword(this.auth, email, password));\n//   }\n\n//   // login with e-mal and password\n//   login(email: string, password: string): Observable<UserCredential> {\n//     return from(signInWithEmailAndPassword(this.auth, email, password));\n//   }\n\n//   // logout\n//   logout(): Observable<void> {\n//     return from(signOut(this.auth));\n//   }\n\n//   // get current user\n//   getCurrentUser(): User | null {\n//     return this.auth.currentUser;\n//   }\n\n//   // state of authentification as observable\n//   getAuthState(): Observable<User | null> {\n//     return this.currentUser$;\n//   }\n// }\n",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n\n@Component({\n    selector: 'lamentis-root',\n    standalone: true,\n    imports: [RouterOutlet],\n    template: `\n        <p class=\"text-pretty pt-[20rem] text-center text-[3rem]\">\n            See you soon !\n        </p>\n        <router-outlet />\n    `,\n})\nexport class AppComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
-            "extends": [],
-            "templateData": "<p class=\"text-pretty mt-40 text-center text-[2.4rem]\">See you soon !</p>\n<router-outlet />\n"
+            "extends": []
         }
     ],
     "modules": [],
@@ -72,7 +227,27 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
-                "defaultValue": "{\n    providers: [\n        provideZoneChangeDetection({ eventCoalescing: true }),\n        provideRouter(routes),\n    ],\n}"
+                "defaultValue": "{\n    providers: [\n        provideZoneChangeDetection({ eventCoalescing: true }),\n        provideRouter(routes),\n        provideColorThemes(THEMES),\n        provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),\n        provideAuth(() => getAuth()),\n    ],\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    production: true,\n    firebaseConfig: {\n        apiKey: 'AIzaSyAajuwg7Oo3sbNQxYhgtYkvf1wlBVOGV3M',\n        authDomain: 'lamentis-584565.firebaseapp.com',\n        projectId: 'lamentis-584565',\n        storageBucket: 'lamentis-584565.firebasestorage.app',\n        messagingSenderId: '730338121574',\n        appId: '1:730338121574:web:49eed75009652a5a811aa7',\n    },\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    production: false,\n    firebaseConfig: {\n        apiKey: 'AIzaSyAajuwg7Oo3sbNQxYhgtYkvf1wlBVOGV3M',\n        authDomain: 'lamentis-584565.firebaseapp.com',\n        projectId: 'lamentis-584565',\n        storageBucket: 'lamentis-584565.firebasestorage.app',\n        messagingSenderId: '730338121574',\n        appId: '1:730338121574:web:49eed75009652a5a811aa7',\n    },\n}"
             }
         ],
         "functions": [],
@@ -88,7 +263,31 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
-                    "defaultValue": "{\n    providers: [\n        provideZoneChangeDetection({ eventCoalescing: true }),\n        provideRouter(routes),\n    ],\n}"
+                    "defaultValue": "{\n    providers: [\n        provideZoneChangeDetection({ eventCoalescing: true }),\n        provideRouter(routes),\n        provideColorThemes(THEMES),\n        provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),\n        provideAuth(() => getAuth()),\n    ],\n}"
+                }
+            ],
+            "src/app/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    production: true,\n    firebaseConfig: {\n        apiKey: 'AIzaSyAajuwg7Oo3sbNQxYhgtYkvf1wlBVOGV3M',\n        authDomain: 'lamentis-584565.firebaseapp.com',\n        projectId: 'lamentis-584565',\n        storageBucket: 'lamentis-584565.firebasestorage.app',\n        messagingSenderId: '730338121574',\n        appId: '1:730338121574:web:49eed75009652a5a811aa7',\n    },\n}"
+                }
+            ],
+            "src/app/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    production: false,\n    firebaseConfig: {\n        apiKey: 'AIzaSyAajuwg7Oo3sbNQxYhgtYkvf1wlBVOGV3M',\n        authDomain: 'lamentis-584565.firebaseapp.com',\n        projectId: 'lamentis-584565',\n        storageBucket: 'lamentis-584565.firebasestorage.app',\n        messagingSenderId: '730338121574',\n        appId: '1:730338121574:web:49eed75009652a5a811aa7',\n    },\n}"
                 }
             ]
         },
@@ -107,7 +306,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -116,6 +315,35 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/services/auth.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AuthService",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
